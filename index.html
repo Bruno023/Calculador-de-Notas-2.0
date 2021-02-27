@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/script.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="row" id="bg">
+        <div class="container-fluid" >
+            <div class="col-sm" style="padding: 5px;">
+                <input type="text" id="NotaMate" name="NotaMate" placeholder="Nota de Matematica" aria-label="Nota de Matematica">
+            </div>
+            <div class="col-sm" style="padding: 5px;">
+                <input type="text" id="NotaLengua" name="NotaLengua" placeholder="Nota de Lengua" aria-label="Nota de Lengua">
+            </div>
+            <div class="col-sm" style="padding: 5px;">
+                <input type="text" id="NotaEFSI" name="NotaEFSI" placeholder="Nota de EFSI" aria-label="Nota de EFSI">
+            </div>
+            <div class="col-sm" style="padding: 5px;"> 
+                <button type="submit" class="btn btn-dark" onClick="SubirNota()">Subir Notas</button>
+                <button type="submit" class="btn btn-dark" onClick="Promedio()">Calcular Promedio</button>
+                <button type="submit" class="btn btn-dark" onClick="Mayor()">Mayor Nota</button>
+            </div>
+                <div class="col-sm" style="padding: 50px;">
+                    <ul class="list-group"style="margin:auto;">
+                        <li class="list-group-item active">NOTAS</li>
+                        <li id="1"class="list-group-item"></li>
+                        <li id="2"class="list-group-item"></li>
+                        <li id="3"class="list-group-item"></li>
+                    </ul>
+                <div>NOTA/S MAS ALTA/S:</div>
+                <h1 style="margin-left: 50px;" id="texto"></h1>
+                <div>PROMEDIO:</div>
+                <h1 style="margin-left: 50px;" id="texto2"></h1>
+            </div>
+        </div>
+    </div>
+        
+    
+</body>
+</html>
